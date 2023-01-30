@@ -1,0 +1,15 @@
+.banner__bg {
+  padding: 10px;
+}
+
+.banner__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(45deg, rgb(128, 101, 160, 0.4), rgb(128, 101, 160, 0.05)), url("../img/laptop.jpg");
+  margin: auto;
+  height: 280px;
+  text-align: center;
+  color: #fff;
+  background-repeat: no-repeat;
+}
