@@ -5,10 +5,6 @@
   padding: 20px 20px;
 }
 
-.cabecalho__logo {
-  width: 50%;
-}
-
 .cabecalho__img {
   border-radius: 10px;
   box-shadow: rgb(128, 101, 160, 0.4) 5px 5px, rgb(128, 101, 160, 0.3) 10px 10px, rgb(128, 101, 160, 0.2) 15px 15px, rgb(128, 101, 160, 0.1) 20px 20px, rgb(128, 101, 160, 0.05) 25px 25px;
@@ -16,7 +12,7 @@
 
 .cabecalho__menu {
   display: flex;
-  width: 50%;
+  width: 100%;
   justify-content: flex-end;
 }
 

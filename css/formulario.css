@@ -1,0 +1,49 @@
+.formulario__titulo {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 2em;
+}
+
+.formulario__campos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario__campo {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin: 15px 0;
+}
+
+.formulario__input {
+  border-radius: 20px;
+  border: 2px solid var(--roxo);
+  width: 500px;
+  padding: 3px;
+}
+
+.formulario__inputCpf {
+  border-radius: 20px;
+  border: 2px solid var(--roxo);
+  width: 250px;
+  padding: 3px;
+}
+
+.formulario__inputData {
+  border-radius: 20px;
+  border: 2px solid var(--roxo);
+  width: 250px;
+  padding: 3px;
+}
+
+.formulario__termo {
+  display: flex;
+  border: none;
+}
+
+.formulario__termo input {
+  margin: 0 10px;
+}

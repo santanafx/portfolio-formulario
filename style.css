@@ -1,5 +1,7 @@
 @import url(./css/cabecalho.css);
 @import url(./css/banner.css);
+@import url(./css/dot.css);
+@import url(./css/formulario.css);
 
 * {
   box-sizing: border-box;
@@ -12,4 +14,5 @@
   --cinza: #c4c4c4;
   --roxo: #7d63a4;
   --branco: #ffffff;
+  --verde: #46bb71;
 }
