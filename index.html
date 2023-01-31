@@ -38,27 +38,61 @@
                 <fieldset class="formulario__campo">
                     <label for="nome">Nome</label>
                     <input class="formulario__input" type="text" id="nome">
-                    <span class="menssagem_erro"></span>
+                    <span class="mensagem_erro"></span>
                 </fieldset>
                 <fieldset class="formulario__campo">
                     <label for="email">Email</label>
-                    <input class="formulario__input" type="text" id="email">
-                    <span class="menssagem_erro"></span>
+                    <input class="formulario__input" type="email" id="email">
+                    <span class="mensagem_erro"></span>
                 </fieldset>
                 <fieldset class="formulario__campo">
                     <label for="rg">RG</label>
                     <input class="formulario__input" type="text" id="rg">
-                    <span class="menssagem_erro"></span>
+                    <span class="mensagem_erro"></span>
+                </fieldset>
+                <fieldset class="formulario__campo">
+                    <label for="estado">Estado</label>
+                    <select class="formulario__select" id="estado" name="estado">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="EX">Estrangeiro</option>
+                    </select>
+                    <span class="mensagem_erro"></span>
                 </fieldset>
                 <fieldset class="formulario__campo">
                     <label for="cpf">CPF</label>
                     <input class="formulario__inputCpf" type="text" id="cpf">
-                    <span class="menssagem_erro"></span>
+                    <span class="mensagem_erro"></span>
                 </fieldset>
                 <fieldset class="formulario__campo">
                     <label for="data">Data de nascimento</label>
-                    <input class="formulario__inputData" type="text" id="data">
-                    <span class="menssagem_erro"></span>
+                    <input class="formulario__inputData" type="date" id="data">
+                    <span class="mensagem_erro"></span>
                 </fieldset>
                 <fieldset class="formulario__termo">
                     <input type="checkbox" id="termos">
@@ -66,8 +100,12 @@
                         descrito na Política
                         de
                         Privacidade.</p>
-                    <span class="menssagem_erro"></span>
+                    <span class="mensagem_erro"></span>
                 </fieldset>
+                <div class="formulario__botao">
+                    <input value="Avançar" type="submit">
+                    <span class="mensagem_erro"></span>
+                </div>
             </form>
 
         </section>

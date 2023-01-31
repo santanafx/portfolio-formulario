@@ -7,8 +7,7 @@
 .formulario__campos {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 0 400px;
 }
 
 .formulario__campo {
@@ -22,6 +21,11 @@
   border-radius: 20px;
   border: 2px solid var(--roxo);
   width: 500px;
+  padding: 3px;
+}
+
+.formulario__select {
+  width: 130px;
   padding: 3px;
 }
 
@@ -42,8 +46,35 @@
 .formulario__termo {
   display: flex;
   border: none;
+  margin: 15px 0;
 }
 
 .formulario__termo input {
   margin: 0 10px;
+}
+
+.formulario__botao {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.formulario__botao input {
+  width: 250px;
+  color: var(--branco);
+  background-color: var(--roxo);
+  font-size: 1.4em;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid var(--branco);
+}
+
+.formulario__botao input:hover {
+  width: 250px;
+  color: var(--roxo);
+  background-color: var(--branco);
+  font-size: 1.4em;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid var(--roxo);
+  transition: 700ms;
 }
