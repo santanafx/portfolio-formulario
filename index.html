@@ -37,22 +37,22 @@
             <form class="formulario__campos">
                 <fieldset class="formulario__campo">
                     <label for="nome">Nome</label>
-                    <input class="formulario__input" type="text" id="nome">
-                    <span class="mensagem_erro"></span>
+                    <input class="formulario__input" type="text" id="nome" minlength="3" required name="nome">
+                    <span class="mensagem__erro"></span>
                 </fieldset>
                 <fieldset class="formulario__campo">
                     <label for="email">Email</label>
-                    <input class="formulario__input" type="email" id="email">
-                    <span class="mensagem_erro"></span>
+                    <input class="formulario__input" type="email" id="email" minlength="3" required name="email">
+                    <span class="mensagem__erro"></span>
                 </fieldset>
                 <fieldset class="formulario__campo">
                     <label for="rg">RG</label>
-                    <input class="formulario__input" type="text" id="rg">
-                    <span class="mensagem_erro"></span>
+                    <input class="formulario__input" type="text" id="rg" required name="rg">
+                    <span class="mensagem__erro"></span>
                 </fieldset>
                 <fieldset class="formulario__campo">
                     <label for="estado">Estado</label>
-                    <select class="formulario__select" id="estado" name="estado">
+                    <select class="formulario__select" id="estado" required name="estado">
                         <option value="AC">Acre</option>
                         <option value="AL">Alagoas</option>
                         <option value="AP">Amapá</option>
@@ -82,29 +82,30 @@
                         <option value="TO">Tocantins</option>
                         <option value="EX">Estrangeiro</option>
                     </select>
-                    <span class="mensagem_erro"></span>
+                    <span class="mensagem__erro"></span>
                 </fieldset>
                 <fieldset class="formulario__campo">
                     <label for="cpf">CPF</label>
-                    <input class="formulario__inputCpf" type="text" id="cpf">
-                    <span class="mensagem_erro"></span>
+                    <input class="formulario__inputCpf" type="text" id="cpf" minlength="11" maxlength="14" required
+                        pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" name="cpf">
+                    <span class="mensagem__erro"></span>
                 </fieldset>
                 <fieldset class="formulario__campo">
                     <label for="data">Data de nascimento</label>
-                    <input class="formulario__inputData" type="date" id="data">
-                    <span class="mensagem_erro"></span>
+                    <input class="formulario__inputData" type="date" id="data" required name="data">
+                    <span class="mensagem__erro"></span>
                 </fieldset>
                 <fieldset class="formulario__termo">
-                    <input type="checkbox" id="termos">
+                    <input type="checkbox" id="termos" required name="termos">
                     <p>Li e estou ciente quanto às condições de tratamento dos meus dados conforme
                         descrito na Política
                         de
                         Privacidade.</p>
-                    <span class="mensagem_erro"></span>
+                    <span class="mensagem__erro"></span>
                 </fieldset>
                 <div class="formulario__botao">
                     <input value="Avançar" type="submit">
-                    <span class="mensagem_erro"></span>
+                    <span class="mensagem__erro"></span>
                 </div>
             </form>
 
@@ -113,6 +114,8 @@
     <footer>
 
     </footer>
+
+    <script src="./main.js" type="module"></script>
 </body>
 
 </html>

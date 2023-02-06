@@ -7,7 +7,7 @@
 .formulario__campos {
   display: flex;
   flex-direction: column;
-  padding: 0 400px;
+  margin: 0 30%;
 }
 
 .formulario__campo {
@@ -21,7 +21,7 @@
   border-radius: 20px;
   border: 2px solid var(--roxo);
   width: 500px;
-  padding: 3px;
+  padding: 8px;
 }
 
 .formulario__select {
@@ -33,14 +33,14 @@
   border-radius: 20px;
   border: 2px solid var(--roxo);
   width: 250px;
-  padding: 3px;
+  padding: 8px;
 }
 
 .formulario__inputData {
   border-radius: 20px;
   border: 2px solid var(--roxo);
   width: 250px;
-  padding: 3px;
+  padding: 8px;
 }
 
 .formulario__termo {
