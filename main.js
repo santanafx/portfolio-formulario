@@ -1,5 +1,7 @@
 import { cpfValido } from "./js/cpf-valido.js";
 import { dataValida } from "./js/data-valida.js";
+import { nomeValida } from "./js/nome-valido.js";
+import { emailValida } from "./js/email-valido.js";
 
 const camposRequired = document.querySelectorAll("[required]");
 
@@ -22,5 +24,15 @@ function verificaCampo(campos) {
     const formularioCampo = campos.parentNode;
     const msgErro = formularioCampo.querySelector(".mensagem__erro");
     msgErro.innerHTML = dataValida(campos);
+  }
+  if (campos.name == "nome" && campos.value != "") {
+    const formularioCampo = campos.parentNode;
+    const msgErro = formularioCampo.querySelector(".mensagem__erro");
+    msgErro.innerHTML = nomeValida(campos);
+  }
+  if (campos.name == "email" && campos.value != "") {
+    const formularioCampo = campos.parentNode;
+    const msgErro = formularioCampo.querySelector(".mensagem__erro");
+    msgErro.innerHTML = emailValida(campos);
   }
 }
