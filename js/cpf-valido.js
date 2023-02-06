@@ -1,15 +1,17 @@
 export function cpfValido(campos) {
-  let teste = 0;
-  let cpf = campos.value.replace(/\.|-/g, "");
+  let teste = "";
+  const cpf = campos.value.replace(/\.|-/g, "");
 
-  let cpfRepetidos = ["00000000000", "11111111111", "22222222222", "33333333333", "44444444444", "55555555555", "66666666666", "77777777777", "88888888888", "99999999999"];
+  const cpfRepetidos = ["00000000000", "11111111111", "22222222222", "33333333333", "44444444444", "55555555555", "66666666666", "77777777777", "88888888888", "99999999999"];
+
+  console.log(cpf.length);
 
   for (let i = 0; i < cpfRepetidos.length; i++) {
     if (cpfRepetidos[i] === cpf) {
-      teste = "cpf falso!";
+      teste = "CPF falso!";
       break;
     } else {
-      teste = "cpf verdadeiro!";
+      teste = "CPF verdadeiro!";
     }
   }
   return teste;

@@ -17,9 +17,10 @@ function verificaCampo(campos) {
     const formularioCampo = campos.parentNode;
     const msgErro = formularioCampo.querySelector(".mensagem__erro");
     msgErro.innerHTML = cpfValido(campos);
-    // console.log(formularioCampo);
   }
   if (campos.name == "data" && campos.value != "") {
-    dataValida(campos);
+    const formularioCampo = campos.parentNode;
+    const msgErro = formularioCampo.querySelector(".mensagem__erro");
+    msgErro.innerHTML = dataValida(campos);
   }
 }
